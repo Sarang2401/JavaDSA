@@ -3,11 +3,7 @@ class Main
   public static void main (String[]args)
   {
 
-    String hex = "C9";
-    System.out.println (convert (hex));
-  }
-  
-  static int convert(String hex){  
+    String hex = "C9";  
     String digits = "0123456789ABCDEF";  
              hex = hex.toUpperCase();  
              int val = 0;  
@@ -16,8 +12,8 @@ class Main
                  char c = hex.charAt(i);  
                  int d = digits.indexOf(c);  
                  val = 16*val + d;  
-             }  
-             return val;  
+             } 
+             System.out.println(val);
   }  
 
 }

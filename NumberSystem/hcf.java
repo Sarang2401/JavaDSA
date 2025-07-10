@@ -10,13 +10,11 @@ class Main
 
   static int getHCF (int num1, int num2)
   {
-    // Handles the case when one of the number is 0 (num1) 
-    // Check alert above in explanation
+
     if (num1 == 0)
       return num2;
 
-    // Handles the case when one of the number is 0 (num2)
-    // Check alert above in explanation
+
     if (num2 == 0)
       return num1;
 
@@ -33,4 +31,4 @@ class Main
 }
 
 
-//Another approach is to use repetitive substraction
+//it uses the approach of repetitive subtraction 
