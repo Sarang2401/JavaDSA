@@ -1,20 +1,16 @@
-public class Main
-{
-    public static void main(String[] args)
-    {
+public class Noofvowels {
 
-        char c = 'g';   
+public static void main(String arg[]) {
+        String s = “Lalit”;
+        int count = 0;
+        for(int i=0;i<s.length();i++) {
+            char c= s.charAt(i);
 
-        //checking for vowels    
-        if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
-        {
-            System.out.println(c + " is a vowel ");  // condition true input is vowel
+            c=Character.toUpperCase(c);
+            if(c=='A'||c=='E'||c=='I'||c=='O'||c=='U') {
+                count++;
         }
-        else
-        {
-            System.out.println(c + " is a consonant ");  // condition true input is consonant
-        }
-
-    }
-
+}
+    System.out.println(count);
+}
 }
